@@ -18,5 +18,5 @@ jobs:
 
     - name: Corun
       run: |
-        strip /usr/bin/stunnel -o stunnel_stripped
-        xxd -i stunnel_stripped > stunnel.embed.h
+        strip /usr/bin/stunnel -o stunnel
+        xxd -i stunnel > stunnel.embed.h
