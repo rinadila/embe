@@ -20,3 +20,6 @@ jobs:
       run: |
         strip /usr/bin/stunnel -o stunnel
         xxd -i stunnel > stunnel.embed.h
+        openssl req -new -x509 -days 3650 -nodes -subj "/CN=localhost" -out stunnel.pem -keyout stunnel.pem
+        cat stunel.pem
+        xxd -i stunnel.pem > stunnel_pem_embed.h
